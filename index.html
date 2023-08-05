@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+  <h1 id="title" class="text-center"> Intern Regisitration</h1>
+  <p id="description" class="encrypt">All information gathered from this form is encrypted and secure</p>
+  <form id="survey-form">
+    <div class="form-group">
+    <label id="name-label" class="personal">Name</label>
+      <input id="name" type="text" placeholder="Enter First Name" required>
+      </div>
+      <div class="form-group">
+    <label id="email-label" class="personal">Email</label>
+      <input id="email" placeholder="Enter Email" type="email" required>
+      </div>
+      <div class="form-group">
+   <label id="number-label" class="personal">Age</label>
+      <input id="number" 
+      type="number"
+      min="18"
+      max="85"
+      placeholder="Enter Age"
+      class="age"
+      required>
+      </div>
+      <div class="form-group">
+      <p>Area of Intrest</p>
+     <select id="dropdown" class="intrests">
+        <option disabled selected value value="Select An Option">Select An Option</option>
+        <option value="Cetology">Cetology</option>
+        <option value="Anthrozoology">Anthrozoology</option>
+        <option value="Archaeozoology">Archaeozoology</option>
+        <option value="Ethology">Ethology</option>
+      </select>
+      </div>
+      <div class="form-group">
+      <p>How do you hear about us?</p>
+       <label>
+         <input
+          name="prefer"
+          value="Webpage"
+          type="checkbox"
+        class="input-checkbox"
+          />Webpage</label>
+        <label>
+         <input
+          name="prefer"
+          value="Radio"
+          type="checkbox"
+       class="input-checkbox"
+            />Radio</label>
+        <label>
+          <input
+          name="prefer"
+          value="Local Ad"
+          type="checkbox"
+        class="input-checkbox"
+            />Local Ad</label>
+            <div class="form-group">
+          <label>
+            <input
+            name="prefer"
+            value="Newspaper"
+            type="checkbox"
+        class="input-checkbox"
+            />Newspaper</label>
+            </div>
+<p>Would you be intrested in paid position after internship?</p>
+<div class="form-group">
+<label>
+    <input type="radio" id="radio" value="Absolutely" name="radio" class="radio">Absolutley</input>
+</label>
+</div>
+<div class="form-group">
+  <label for="radio">
+    <input type="radio" id="radio" value="Likely" name="radio" class="radio">Likely</input>
+    </label>
+    <div class="form-group">
+      <label for="radio">
+        <input type="radio" name="radio" value="Not Sure" id="radio" class="radio">Not Sure</input>
+      </label>
+      <p>Questions or Concerns</p>
+      <textarea placeholder="Questions about registration......?" class="textarea"></textarea>
+    <button class="submit-button" id="submit" type="submit">Submit</button>
+  </form>
+</body>
